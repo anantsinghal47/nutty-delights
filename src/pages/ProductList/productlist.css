@@ -1,0 +1,26 @@
+.product-list-box {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-inline: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p.MuiTypography-root.MuiTypography-body1.product-list-box-heading {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.middle-box {
+    margin-inline: 30px;
+}
+
+.product-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    /* justify-content: center; */
+
+}

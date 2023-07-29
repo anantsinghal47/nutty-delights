@@ -14,13 +14,14 @@
     gap: 30px
 }
 
-.content-heading {
+p.MuiTypography-root.MuiTypography-body1.content-heading {
     color: white;
     margin-bottom: 10px;
 }
 
-.content-subheading {
+p.MuiTypography-root.MuiTypography-body1.content-subheading {
     color: white;
+    margin-bottom: 5px;
     font-size: 14px;
     opacity: 0.5;
 }

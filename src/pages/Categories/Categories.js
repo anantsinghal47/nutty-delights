@@ -8,6 +8,7 @@ import Category from './Category'
 
 const Categories = () => {
 
+
     const categories = [
         {
             id: '1',
@@ -41,6 +42,7 @@ const Categories = () => {
             image_src: 'https://img.freepik.com/free-photo/various-dried-fruits-bowl-trivet-marble-surface_114579-84050.jpg?size=626&ext=jpg&ga=GA1.1.1043680317.1690372652&semt=ais'
         },
 
+
     ]
 
     const heading = 'Shop our top catgories'
@@ -58,6 +60,8 @@ const Categories = () => {
                     })
                 }
             </div>
+
+            {/* <Typography>Explore More</Typography> */}
 
 
 

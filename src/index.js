@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Home from './pages/Home';
 import Cart from './pages/Cart';
 import { ThemeProvider } from '@emotion/react';
 import theme from './theme/theme'
@@ -11,6 +10,8 @@ import Offers from './pages/Offers';
 import BulkOrder from './pages/BulkOrder';
 import Delivery from './pages/Delivery';
 import Categories from './pages/Categories/Categories';
+import ProductList from './pages/ProductList/ProductList';
+import ProductPage from './pages/Product/ProductPage';
 
 
 // creating the first route;
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Categories />
       },
       {
         path: 'cart',
@@ -43,6 +44,22 @@ const router = createBrowserRouter([
         path: 'delivery',
         element: <Delivery />
       },
+      {
+        path: 'products/',
+        element: <ProductList />,
+        // children: [
+        //   {
+        //     path: ':productTypeId/:productId',
+        //     element: <ProductPage />
+        //   },
+        // ]
+      },
+      {
+        path: ':productId',
+        element: <ProductPage />
+      },
+
+
     ]
   },
 ]);

@@ -99,8 +99,8 @@ const NavBar = (props) => {
     <div>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <AppBar position='relative' className='app-bar' elevation={0} component="nav">
-          <Toolbar sx={{ margin: '10px' }}>
+        <AppBar sx={{ zIndex: '5', marginBottom: '10px', minHeight: '0 !important' }} position='relative' className='app-bar' elevation={0} component="nav">
+          <Toolbar sx={{ marginInline: '10px', padding: '0px !important ', minHeight: 'none !important' }}>
             <IconButton
               aria-label="open drawer"
               // edge="start"
@@ -167,7 +167,7 @@ const NavBar = (props) => {
           </Drawer>
         </Box>
       </Box>
-    </div>
+    </div >
   )
 }
 
